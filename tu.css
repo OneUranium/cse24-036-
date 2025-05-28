@@ -12,7 +12,7 @@ body {
 h1 {
   color: #ff3cac;
   font-family: "press Start 2P";
-font-size: 2rem;
+font-size: 1.5rem;
   margin-bottom: 20px;
   text-shadow: 0 0 5px #ff3cac, 0 0 10px #ff6ec7;
   
@@ -25,11 +25,12 @@ h2 {
   margin-bottom: 30px;
   text-shadow: 0 0 5px #ff3cac;
   padding-bottom: 10px;
+  font-size: 1.5rem;
 }
 
 .hero-section {
   background: linear-gradient(145deg, #1f0037, #37004c);
-  padding: 80px 20px 60px;
+  padding: 40px 10px ;
   border-bottom: 2px solid #ff3cac;
   box-shadow: 0 0 15px #ff3cac55;
   position: relative;
@@ -38,8 +39,8 @@ h2 {
   text-align: center;
 }
 
-.hero-section .tagline {
-  font-size: 1.3rem;
+.tagline {
+  font-size: 1rem;
   color: #ffadd8;
 }
 .logo{
@@ -53,12 +54,12 @@ h2 {
 
   p {
   font-family: verdana;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   margin: 15px auto;
   margin-left: auto;
   margin-top: auto;
-  padding: 10px;
+  padding: 5px 10px;
 
 }
 
@@ -68,19 +69,19 @@ nav{
 }
 /*tse ke tsa navigation list*/
 nav ul {
-  justify-content: flex-start;
-  padding: 0;
-  gap: 4px;
+  justify-content: center;
+  padding: 10;
+  gap: 10px;
   display: flex;
   list-style: none;
   border-bottom: 4px solid #ff3cac55;
-  display:flex;
+  flex-wrap: wrap;
 }
 /*moo ke button style */
 nav ul li a {
   display: inline-block;
-  padding: 20px 40px;
-  background: linear-gradient(45deg, #ff3cac, #784ba0); /* Gradient background */
+  padding: 8px 15px;
+  background: linear-gradient( to right, 45deg, #ff3cac, #784ba0); /* Gradient background */
   color: white;
   border-radius: 30px; /* Rounded corners */
   border: 2px solid transparent;
@@ -89,7 +90,9 @@ nav ul li a {
   transition: all 0.3s ease; /* Smooth transition */
   margin-right: 40px;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
+  width: auto;
+  margin-right: 0;
 }
 /* Hover Effect for Buttons */
 nav ul li a:hover {
@@ -119,14 +122,14 @@ nav ul li a:active {
 }
 .gallery-section{
   display:grid;
-  grid-template-columns: repeat (auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 40px;
+  grid-template-columns: repeat (auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  padding: 20px;
   justify-items: center;
 }
 .gallery-img {
   width: 100%;
-  height: 300px;
+  height: 150px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.9);
@@ -143,16 +146,28 @@ nav ul li a:active {
   .gallery-img {
     height: 200px;            /* Smaller height for mobile screens */
   }
+  hi{
+    font-size: 1.2rem;
+  }
+   nav ul li a {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+  
+  .section-glow {
+    padding: 20px 10px;
+    margin: 15px auto;
+  }
 }
 .modal {
   display: none;
   position: fixed;
   z-index: 9999;
-  padding-top: 60px;
+  padding-top: 20px;
   left: 0;
   top: 0;
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   overflow: auto;
   background-color: rgba(0,0,0,0.9);
 }
@@ -160,7 +175,7 @@ nav ul li a:active {
 .modal-content {
   margin: auto;
   display: block;
-  width: 50%;
+  width: 90%;
   max-width: 500px;
   border-radius: 10px;
 }
@@ -183,7 +198,7 @@ nav ul li a:active {
   background: linear-gradient(135deg, #ff6ec7, #ff3cac88); /* Soft pastel gradient */
   color: #fff;
   border-radius: 25px; /* Slightly rounded corners */
-  padding: 30px 15px;
+  padding: 20px 10px;
   text-decoration: none;
   display: inline-block;
   transition: all 0.3s ease;
@@ -191,6 +206,9 @@ nav ul li a:active {
   position: relative;
   font-family: 'Press Start 2P', sans-serif; /* Retro font for added effect */
   transform: scale(1); 
+  width: 100%;
+  margin-bottom: 15px;
+  
 }
 
 /* Hover effects for buttons */
@@ -236,8 +254,8 @@ nav ul li a:active {
 footer {
   background-color: #37004c;
   color: #fff;
-  padding: 20px;
-  font-size: 0.9rem;
+  padding: 15px;
+  font-size: 0.8rem;
   border-top: 3px solid #fff;
 }
 
