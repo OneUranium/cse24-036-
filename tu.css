@@ -161,6 +161,9 @@ nav ul li a:active {
   .logo img {
     height: 50px; /* Smaller on mobile */
   }
+  .hero-section {
+        padding: 80px 15px 30px;
+    }
 }
 .modal {
   display: none;
@@ -268,6 +271,7 @@ footer p {
 .logo img {
   max-height: 80px;
   width: auto;
+  transition: transform 0.3s ease;
 }
 .btn-custom {
   background-color: #ff69b4; /* Pink, obviously */
