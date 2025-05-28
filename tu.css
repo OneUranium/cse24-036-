@@ -158,6 +158,9 @@ nav ul li a:active {
     padding: 20px 10px;
     margin: 15px auto;
   }
+  .logo img {
+    height: 50px; /* Smaller on mobile */
+  }
 }
 .modal {
   display: none;
