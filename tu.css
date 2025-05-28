@@ -33,20 +33,29 @@ h2 {
   border-bottom: 2px solid #ff3cac;
   box-shadow: 0 0 15px #ff3cac55;
   position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 .hero-section .tagline {
   font-size: 1.3rem;
   color: #ffadd8;
 }
-
+.logo{
+  postion: absolute
+  top: 0;
+  left:0;
+  height: auto;
+  
+}
 
 
   p {
   font-family: verdana;
   font-size: 20px;
   font-weight: bold;
-  margin: 15px;
+  margin: 15px auto;
   margin-left: auto;
   margin-top: auto;
   padding: 10px;
@@ -65,6 +74,7 @@ nav ul {
   display: flex;
   list-style: none;
   border-bottom: 4px solid #ff3cac55;
+  display:flex;
 }
 /*moo ke button style */
 nav ul li a {
@@ -235,7 +245,8 @@ footer p {
   margin: 0;
 }
 .logo img {
-  height: 60px;
+  max-height: 80px;
+  width: auto;
 }
 .btn-custom {
   background-color: #ff69b4; /* Pink, obviously */
