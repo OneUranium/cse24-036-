@@ -1,0 +1,131 @@
+<!Doctype html>
+<html lang= "en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>TV Show Cosplays - Otaku Threads</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="tu.css">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Doto:wght@100..900&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+    <body>
+        
+        
+          <header class="hero-section d-flex flex-column align-items-center position-relative">
+            <!-- Logo aligned to the top-left -->
+            <div class="logo position-absolute top-0 start-0 p-3">
+              <a href="index.html">
+                <img src="Otaku Logo.jpg" alt="Otaku Threads Logo" style="max-height: 100px;">
+              </a>
+            </div>
+        <h1>TV Show Cosplay </h1>
+        <p class = "tagline"> Iconic TV Show looks brought to life by fans.</p>
+        </header>
+
+        <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about_1.html">About Us</a></li>
+              <li><a href="contacts.html">Contact</a></li>  
+            </ul>
+          </nav>
+  
+
+        <section class =" gallery-section container py-5">
+            <div class ="row g-4">
+                <div class ="col-md-3 col-sm-6">
+                    <img src="Totally Spies 🌸🎃.jpeg" 
+                    alt="Totally Spices" 
+                    data-description="Totally Spies is a French-Canadian animated series that follows three teenage girls—Sam, Clover, and Alex—who juggle high school life with their secret careers as super spies for WOOHP (World Organization of Human Protection)."
+                    class="img-fluid gallery-img" 
+                    onclick="openModal(this)">
+                      </div>  
+                      <div class = " col-md-3 col-sm-6">
+                        <img src="Starfire costume cosplay HeirOfGlee.jpeg" 
+                        alt="Starfire" 
+                        data-description="Starfire, or Koriand'r, is a DC Comics superhero and a member of the Teen Titans. She's an alien princess from the planet Tamaran with a bright, bubbly personality and a fierce warrior spirit."
+                        class=" img-fluid gallery-img"  
+                        onclick="openModal(this)">
+                      </div>
+                        <div class="col-md-3 col-sm-6">
+                            <img src="quen blackwell.jpeg"
+                             alt="Princess Peach" 
+                             data-description="Princess Peach Toadstool is the beloved ruler of the Mushroom Kingdom and one of the most iconic characters in video game history."
+                             class="img-fluid gallery-img" 
+                              onclick="openModal(this)">
+                          </div>
+                          <div class="col-md-3 col-sm-6">
+                            <img src="Fionna and Finn 💙💚.jpeg"
+                             alt="Finn"
+                             data-description="A brave, adventurous boy from the Land of Ooo, known for his white bear-eared hat, boundless energy, and unwavering sense of justice, always ready to save the day with his best friend, Jake the Dog."
+                             class="img-fluid gallery-img"
+                               onclick="openModal(this)">
+                          </div>
+                          <div class="col-md-3 col-sm-6">
+                            <img src="Freddy Krueger Halloween costume.jpeg" 
+                            alt="Freddy Krueger" 
+                            data-description="A burned, razor-gloved nightmare stalker who haunts the dreams of his victims, turning their worst fears into deadly reality with his twisted sense of humor."
+                            class="img-fluid gallery-img" 
+                             onclick="openModal(this)">
+                          </div>
+                          <div class="col-md-3 col-sm-6">
+                            <img src="GARNET 💎⭐.jpeg"
+                             alt=" Garnet" 
+                             data-description="A calm, powerful fusion of love and strength, Garnet is a stoic, visor-wearing leader of the Crystal Gems, embodying the unity and power of her two components, Ruby and Sapphire."
+                             class="img-fluid gallery-img"
+                              onclick="openModal(this)">
+                          </div>
+                          <div class="col-md-3 col-sm-6">
+                            <img src="- 🕸️ -.jpeg"
+                             alt="Spider Woman" 
+                             data-description="A super-powered secret agent with enhanced strength, speed, and agility, Jessica Drew fights crime with bio-electric venom blasts, wall-crawling abilities, and a mysterious past tied to HYDRA and S.H.I.E.L.D., balancing the line between hero and spy."
+                             class="img-fluid gallery-img"  
+                             onclick="openModal(this)">
+                          </div>
+                          <div class="col-md-3 col-sm-6">
+                            <img src="Jordan via insta story 🔪.jpeg"
+                             alt="The Simpsons" 
+                             data-description="An iconic animated family known for their bright yellow skin and satirical take on American life, featuring the lazy but lovable Homer, patient Marge, mischievous Bart, brilliant Lisa, and the silent baby Maggie."
+                             class="img-fluid gallery-img" 
+                             onclick="openModal(this)">
+                          </div>
+
+                          <div id="imgModal" class="modal" onclick="closeModal()">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="modalImage">
+                            <div id="caption"></div>
+                          </div>
+
+                        </div>
+                      </section>
+                    
+                      <div class="text-center my-4">
+                        <a href="gallery.html" class="btn btn-custom px-4 py-2">⬅ Back to Categories</a>
+                      </div>
+                    
+                      <footer class="text-center p-3">
+                        <p>&copy; 2025 Otaku Threads. All rights reserved.</p>
+                      </footer>
+
+                      
+                      <script>
+                      function openModal(img) {
+                        const modal = document.getElementById("imgModal");
+                        const modalImg = document.getElementById("modalImage");
+                        const caption = document.getElementById("caption");
+                  
+                        modal.style.display = "block";
+                        modalImg.src = img.src;
+                        caption.innerText = img.alt;
+                        caption.innerHTML = `<h3>${img.alt}</h3><p>${img.dataset.description}</p>`;
+                      }
+                  
+                      function closeModal() {
+                        document.getElementById("imgModal").style.display = "none";
+                      }
+                    </script>
+                    </body>
+                    </html>
+                      
+            

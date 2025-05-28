@@ -1,0 +1,257 @@
+body {
+  background-color:  #0e1117;
+  color: #cca5d2;
+  padding:0;
+  font-family: 'Verdana', sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1 {
+  color: #ff3cac;
+  font-family: "press Start 2P";
+font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px #ff3cac, 0 0 10px #ff6ec7;
+  
+}
+
+h2 {
+  color:#ff3cac;;
+  text-align: center;
+  font-family:"Bebas Neue";
+  margin-bottom: 30px;
+  text-shadow: 0 0 5px #ff3cac;
+  padding-bottom: 10px;
+}
+
+.hero-section {
+  background: linear-gradient(145deg, #1f0037, #37004c);
+  padding: 80px 20px 60px;
+  border-bottom: 2px solid #ff3cac;
+  box-shadow: 0 0 15px #ff3cac55;
+  position: relative;
+}
+
+.hero-section .tagline {
+  font-size: 1.3rem;
+  color: #ffadd8;
+}
+
+
+
+  p {
+  font-family: verdana;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px;
+  margin-left: auto;
+  margin-top: auto;
+  padding: 10px;
+
+}
+
+nav{
+  margin-top: 40px;
+  margin-bottom: auto;
+}
+/*tse ke tsa navigation list*/
+nav ul {
+  justify-content: flex-start;
+  padding: 0;
+  gap: 4px;
+  display: flex;
+  list-style: none;
+  border-bottom: 4px solid #ff3cac55;
+}
+/*moo ke button style */
+nav ul li a {
+  display: inline-block;
+  padding: 20px 40px;
+  background: linear-gradient(45deg, #ff3cac, #784ba0); /* Gradient background */
+  color: white;
+  border-radius: 30px; /* Rounded corners */
+  border: 2px solid transparent;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease; /* Smooth transition */
+  margin-right: 40px;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+/* Hover Effect for Buttons */
+nav ul li a:hover {
+  background: linear-gradient(45deg, #380c2f, #571417); /* Reverse gradient on hover */
+
+  border-color: #ff6ec7; /* Add border on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  box-shadow: 0 4px 12px rgba(255, 60, 172, 0.53); /* Shadow effect on hover */
+  color: #ff8fd6;
+  text-decoration: underline;
+}
+* Active Link Style */
+nav ul li a:active {
+  transform: scale(1); 
+  box-shadow: none;
+}
+.section-glow {
+  background: rgba(255, 255, 255, 0.05); /* faint glassy white */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 40px 20px;
+  border-radius: 20px;
+  margin: 30px auto;
+  max-width: 800px;
+  box-shadow: 0 0 20px rgba(255, 50, 150, 0.3);
+}
+.gallery-section{
+  display:grid;
+  grid-template-columns: repeat (auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  justify-items: center;
+}
+.gallery-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.9);
+  transition: transform 0.3s ease;
+  padding: 0;
+  display: block;
+  margin: 20px auto;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .gallery-img {
+    height: 200px;            /* Smaller height for mobile screens */
+  }
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 80%;
+  height: 80%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 50%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+#caption {
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+.category-card {
+  background: linear-gradient(135deg, #ff6ec7, #ff3cac88); /* Soft pastel gradient */
+  color: #fff;
+  border-radius: 25px; /* Slightly rounded corners */
+  padding: 30px 15px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 182, 193, 0.4); /* Light soft shadow */
+  position: relative;
+  font-family: 'Press Start 2P', sans-serif; /* Retro font for added effect */
+  transform: scale(1); 
+}
+
+/* Hover effects for buttons */
+.category-card:hover {
+  background: linear-gradient(135deg, #ffb0d6, #ff8cd1, #ff6ccf); /* Bright hover effect */
+  box-shadow: 0 0 25px rgba(255, 182, 193, 0.7), 0 0 50px rgba(255, 105, 180, 0.5); /* Glowing shadow */
+  transform: scale(1.1) rotate(3deg); /* Playful zoom-in and slight tilt */
+}
+
+.category-card h3 {
+  font-size: 1.6rem;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.category-card span {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  display: block;
+  animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+  0% { text-shadow: 0 0 8px #ff8fd6, 0 0 16px #ff6be6; }
+  100% { text-shadow: 0 0 12px #ff6ccf, 0 0 24px #ffadd8; }
+}
+
+/* Add a pixelated border effect to make it more video game-inspired */
+.category-card:before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
+
+/* Footer Style */
+footer {
+  background-color: #37004c;
+  color: #fff;
+  padding: 20px;
+  font-size: 0.9rem;
+  border-top: 3px solid #fff;
+}
+
+footer p {
+  margin: 0;
+}
+.logo img {
+  height: 60px;
+}
+.btn-custom {
+  background-color: #ff69b4; /* Pink, obviously */
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #ff1493; /* A deeper pink for hover vibes */
+}
+
+
+
+
+
+
+
+
